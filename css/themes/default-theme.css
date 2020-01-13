@@ -1,21 +1,77 @@
 /* Theme */
+:root{
+    --light-accent1: #FAFAFA;
+    --dark-accent1: #2A2A2A;
+}
+::-moz-selection,
+::selection{
+    background-color:#000;
+}
+.light main {
+	color: var(--light-accent1);
+}
 
-main {
+.dark main {
+    color: var(--dark-accent1);
+}
+
+.light .icons-social a {
+    color: var(--light-accent1);
+}
+
+.dark .icons-social a {
+    color: var(--dark-accent1);
+}
+
+.icons-social a i{    
+    transition:.3s all ease;
+    transform:scale(1);
+}
+
+.icons-social a i:hover{
+    transform:scale(1.10);
+}
+
+.light .icons-social a svg path{
+	fill: var(--light-accent1);
+}
+
+.dark .icons-social a svg path{
+	fill: var(--dark-accent1);
+}
+
+.fiery{    
 	background: #f12711;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #FAFAFA;
 }
 
-.icons-social a {
-    color: #FAFAFA;
-    transition:.3s all ease;
-    transform:scale3d(1);
-}
-.icons-social a:hover{
-    transform:scale3d(1.2);
+.ocean{
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.icons-social a svg path{
-	fill: #FAFAFA;
+.nightly{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.witching{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.morning{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.zinc{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
